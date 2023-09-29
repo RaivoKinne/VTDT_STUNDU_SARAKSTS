@@ -1,8 +1,9 @@
 "use client";
-import Diena from "./Dienas";
+
 import useFetchData from "../hooks/useFetchData";
 import { Data, info } from "../types";
 import { useParams } from "react-router-dom";
+import Dienas from "./Dienas";
 
 export default function Grupas() {
   const { error, loading, data }: Data = useFetchData();
@@ -19,7 +20,7 @@ export default function Grupas() {
   return (
     <main>
       {grupasInfo.map((info, index) => (
-        <Diena key={index} info={info} index={index} />
+        <Dienas key={index} info={info} index={index} />
       ))}
     </main>
   );

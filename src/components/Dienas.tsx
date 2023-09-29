@@ -1,11 +1,11 @@
 import { info } from "../types";
-import Stundas from "./Stundas";
+import Diena from "./stundas/Diena";
 
-export default function Diena({ info, index }: { info: info; index: number }) {
+export default function Dienas({ info, index }: { info: info; index: number }) {
   const { classes, teachers } = info;
   return (
     <>
-      <Stundas classes={classes} teacher={teachers} index={index} />
+      <Diena classes={classes} teacher={teachers} index={index} />
     </>
   );
 }
