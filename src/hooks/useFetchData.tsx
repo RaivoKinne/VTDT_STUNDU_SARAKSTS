@@ -7,15 +7,12 @@ export default function useFetchData() {
 
   async function fetchData() {
     try {
-      const response = await fetch(
-        "http://skrazzo.sites.hex.lv/projects/class-list/api.php",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch("/api", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       const responseData = await response.json();
       if ("last-updated" in responseData) {
