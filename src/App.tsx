@@ -1,19 +1,13 @@
-import useFetchData from "./hooks/useFetchData";
-import { Data } from "./types";
-import { Link } from "react-router-dom";
-function App() {
-  const { data, error, loading }: Data = useFetchData();
-  if (error) return <p>Error: {error.message}</p>;
-  if (loading) return <p>Loading...</p>;
+import Navbar from "./components/Navbar";
+import StunduSaraksts from "./components/StunduSaraksts";
 
+function App() {
   return (
-    <main className="flex justify-center items-center h-screen">
-      <section className="flex justify-center items-center flex-wrap gap-4 w-[500px] h-[300px]  ">
-        {Object.keys(data).map((key) => (
-          <div className="" key={key}>
-            <Link to={`/grupa/${key}`}>{key}</Link>
-          </div>
-        ))}
+    <main className="flex justify-center items-center h-screen overflow-y-hidden">
+      <section className="flex justify-center items-center  flex-col">
+        <p className="text-[30px] my-10">STUNDU SARAKSTS</p>
+        <Navbar />
+        <StunduSaraksts />
       </section>
     </main>
   );
