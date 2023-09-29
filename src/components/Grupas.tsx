@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 export default function Grupas() {
   const { error, loading, data }: Data = useFetchData();
   const { id } = useParams();
-  const grupasInfo: info[] = data && data[id as string];
+  const grupasInfo: info[] = data[id as string];
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -19,7 +19,7 @@ export default function Grupas() {
   return (
     <main>
       {grupasInfo.map((info, index) => (
-        <Diena key={index} info={info} />
+        <Diena key={index} info={info} index={index} />
       ))}
     </main>
   );

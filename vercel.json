@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "http://skrazzo.sites.hex.lv/projects/class-list/api.php"
+    },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

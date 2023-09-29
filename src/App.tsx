@@ -7,8 +7,8 @@ function App() {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <main>
-      <section className="grid place-items-center w-[500px] h-[300px] grid-cols-12 ">
+    <main className="flex justify-center items-center h-screen">
+      <section className="flex justify-center items-center flex-col gap-4 flex-wrap w-[500px] h-[300px]  ">
         {Object.keys(data).map((key) => (
           <div className="" key={key}>
             <Link to={`/grupa/${key}`}>{key}</Link>
