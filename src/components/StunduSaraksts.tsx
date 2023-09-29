@@ -1,6 +1,6 @@
 export default function StunduSaraksts() {
   return (
-    <section className="flex flex-col gap-4 justify-center items-center my-[2rem] h-[300px] ">
+    <section className="flex flex-col gap-4 justify-center items-center my-[4rem] h-[300px] ">
       <h1 className="text-2xl font-bold">Stundu saraksts 1.-4. kursiem</h1>
       <h2 className="text-xl font-bold">PIRMDIENA-PIEKTDIENA</h2>
       <article className="flex gap-8">
