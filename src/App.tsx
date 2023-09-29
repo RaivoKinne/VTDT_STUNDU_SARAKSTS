@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main className="flex justify-center items-center h-screen">
-      <section className="flex justify-center items-center flex-col gap-4 flex-wrap w-[500px] h-[300px]  ">
+      <section className="flex justify-center items-center flex-wrap gap-4 w-[500px] h-[300px]  ">
         {Object.keys(data).map((key) => (
           <div className="" key={key}>
             <Link to={`/grupa/${key}`}>{key}</Link>
