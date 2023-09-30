@@ -1,7 +1,7 @@
 export const dayOfWeek = (index: number) => {
   switch ((index % 5) + 1) {
     case 1:
-      return "Pirmdiena";
+      return `Pirmdiena`;
     case 2:
       return "Otrdiena";
     case 3:
@@ -14,8 +14,10 @@ export const dayOfWeek = (index: number) => {
 };
 
 export const week = (index: number) => {
-  switch (index === 5) {
-    case true:
+  switch (index) {
+    case 0:
+      return "Šo nedēļ";
+    case 5:
       return "Nākoša nedēļa";
   }
 };

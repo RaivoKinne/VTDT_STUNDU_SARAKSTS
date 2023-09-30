@@ -4,6 +4,7 @@ import { Data } from "../types";
 
 export default function Navbar() {
   const { data, loading }: Data = useFetchData();
+
   return (
     <nav className="flex justify-center items-center flex-wrap gap-4 w-[300px] md:w-[500px] lg:w-[700px]">
       {Object.keys(data).map((key) => (
