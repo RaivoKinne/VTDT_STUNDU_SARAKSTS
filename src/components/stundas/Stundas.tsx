@@ -10,14 +10,14 @@ export default function Stundas({
   return (
     <>
       <tr key={index}>
-        <td className="grid md:flex w-full">
-          <p className="p-3 border border-gray-300 flex md:justify-normal justify-center w-full h-[50px] items-center text-left">
+        <td className="grid w-full md:flex">
+          <div className="p-3 border border-gray-300 flex md:justify-normal justify-center w-full h-[50px] items-center text-left">
             {index + 1 + ". " + klase}
-          </p>
+          </div>
 
-          <p className="p-3 border border-gray-300 flex justify-center w-full md:w-[300px] items-center h-[50px]">
+          <div className="p-3 border border-gray-300 flex flex-wrap justify-center w-full md:w-[300px] h-[50px] items-center ">
             {teacher[index]}
-          </p>
+          </div>
         </td>
       </tr>
     </>
