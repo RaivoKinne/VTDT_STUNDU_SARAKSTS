@@ -15,7 +15,7 @@ export default function Diena({
     <>
       <Week index={index} />
       <section className="flex justify-center items-center w-full my-8">
-        <table className="w-[450px]  border-collapse border border-gray-300 shadow-md table-fixed md:w-[600px] lg:w-[900px] xl:w-[1200px]">
+        <table className="w-[350px]  border-collapse border border-gray-300 shadow-md table-fixed md:w-[600px] lg:w-[900px] xl:w-[1200px]">
           <DayOfWeek index={index} />
           <tbody className="">
             {classes.map((klase, index) => (
