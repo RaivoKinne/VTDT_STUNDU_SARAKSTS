@@ -5,7 +5,7 @@ export default function DayOfWeek({ index }: { index: number }) {
     <>
       <thead>
         <tr>
-          <th className="p-3  bg-gray-200 text-center">{dayOfWeek(index)}</th>
+          <th className="p-3 bg-black text-white text-center">{dayOfWeek(index)}</th>
         </tr>
       </thead>
     </>
